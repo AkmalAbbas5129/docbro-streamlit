@@ -6,6 +6,7 @@ from docx import Document
 from docx.shared import Pt
 from docx.enum.text import WD_PARAGRAPH_ALIGNMENT, WD_ALIGN_PARAGRAPH
 import re
+import streamlit as st
 import os
 
 os.environ["AZURE_OPENAI_API_KEY"] = st.secrets["openai_api_key"]
