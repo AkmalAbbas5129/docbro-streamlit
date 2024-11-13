@@ -4,6 +4,9 @@ from crewai import Agent, Task, Crew, Process
 from crewai_tools import FileReadTool, MDXSearchTool
 from langchain_openai import ChatOpenAI
 import streamlit as st
+import os
+
+os.environ["OPENAI_API_KEY"] = st.secrets["openai_api_key"]
 
 def setup_environment():
     load_dotenv()
