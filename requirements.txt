@@ -1,0 +1,15 @@
+crewai
+crewai-tools
+langchain_community
+mammoth
+markdown
+python-dotenv
+streamlit
+PyPDF2
+python-docx
+markdownify
+streamlit-option-menu
+streamlit-markmap
+graphviz
+streamlit-react-flow
+streamlit-agraph
