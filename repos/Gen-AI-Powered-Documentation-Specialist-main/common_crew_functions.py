@@ -3,11 +3,12 @@ from dotenv import load_dotenv
 from crewai import Agent, Task, Crew, Process
 from crewai_tools import FileReadTool, MDXSearchTool
 from langchain_openai import ChatOpenAI
+import streamlit as st
 
 def setup_environment():
     load_dotenv()
     os.environ["OPENAI_MODEL_NAME"] = 'gpt-3.5-turbo'
-    os.environ["OPENAI_API_KEY"] = os.getenv("openai_api_key")
+    os.environ["OPENAI_API_KEY"] = st.secrets["openai_api_key"]
 
 def load_template(path):
     with open(path, 'r', encoding='utf-8') as file:
