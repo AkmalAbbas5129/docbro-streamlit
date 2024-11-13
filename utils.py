@@ -9,6 +9,7 @@ import re
 import streamlit as st
 import os
 
+os.environ["OPENAI_API_KEY"] = st.secrets["openai_api_key"]
 os.environ["AZURE_OPENAI_API_KEY"] = st.secrets["openai_api_key"]
 os.environ["AZURE_OPENAI_ENDPOINT"] = st.secrets["azure_endpoint"]
 os.environ["AZURE_OPENAI_API_VERSION"] = st.secrets["api_version"]
